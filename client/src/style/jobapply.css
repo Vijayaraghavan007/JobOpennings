@@ -1,0 +1,87 @@
+
+.page-wrapper {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #000000c2;
+  }
+  
+  
+  .job-apply-container {
+    width: 40%;
+    max-width: 40%;
+    margin: 60px 0;
+    padding: 50px 30px;
+    background: linear-gradient(135deg, #f3e8ff, #faf5ff);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(80, 0, 150, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  
+  .job-apply-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(80, 0, 150, 0.15);
+  }
+  
+  .job-apply-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+    color: #4c1d95;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(76, 29, 149, 0.1);
+    transition: color 0.3s;
+  }
+  
+  .job-apply-container h2:hover {
+    color: #6d28d9;
+  }
+  
+  .job-apply-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .job-apply-container input[type="text"],
+  .job-apply-container input[type="email"],
+  .job-apply-container input[type="file"] {
+    padding: 12px 15px;
+    border: 1px solid #d1b3ff;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .job-apply-container input[type="text"]:focus,
+  .job-apply-container input[type="email"]:focus,
+  .job-apply-container input[type="file"]:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.2);
+    outline: none;
+  }
+  
+  .job-apply-container button {
+    padding: 14px;
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+  }
+  
+  .job-apply-container button:hover {
+    background: linear-gradient(135deg, #6d28d9, #7e22ce);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+    transform: translateY(-2px);
+  }
+  
+  .job-apply-container button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(124, 58, 237, 0.25);
+  }
+  

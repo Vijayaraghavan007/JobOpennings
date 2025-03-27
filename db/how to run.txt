@@ -1,0 +1,38 @@
+
+-- CREATE DATABASE job_portal;
+
+-- USE job_portal;
+
+-- CREATE TABLE jobs (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     title VARCHAR(255) NOT NULL,
+--     description TEXT NOT NULL
+-- );
+
+-- CREATE TABLE applications (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     name VARCHAR(255) NOT NULL,
+--     email VARCHAR(255) NOT NULL,
+--     job_id INT,
+--     resume VARCHAR(255),
+--     FOREIGN KEY (job_id) REFERENCES jobs(id)
+-- );
+
+-- 
+
+-- Insert sample job listings
+INSERT INTO jobs (title, description) VALUES
+('Software Engineer', 'Develop and maintain web applications.'),
+('Frontend Developer', 'Build interactive user interfaces using React.'),
+('Backend Developer', 'Create robust backend services using Node.js and Express.'),
+('Data Analyst', 'Analyze business data and create reports.'),
+('DevOps Engineer', 'Manage CI/CD pipelines and cloud infrastructure.');
+
+-- Insert sample applications
+INSERT INTO applications (name, email, job_id, resume) VALUES
+('Alice Johnson', 'alice@example.com', 1, 'uploads/alice_resume.pdf'),
+('Bob Smith', 'bob@example.com', 2, 'uploads/bob_resume.docx'),
+('Charlie Brown', 'charlie@example.com', 3, 'uploads/charlie_resume.pdf'),
+('David Lee', 'david@example.com', 4, 'uploads/david_resume.doc'),
+('Emma Watson', 'emma@example.com', 5, 'uploads/emma_resume.pdf');
+
